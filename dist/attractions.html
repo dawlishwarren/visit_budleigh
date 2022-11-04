@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Budleigh | Attractions</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <header id="header-inner">
+        <div class="container">
+            <nav id="inner-nav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="attractions.html" class="current">Attractions</a></li>
+                  <li><a href="eatdrinkstay.html">Eat, Drink and Stay</a></li>
+                  <li><a href="contact.html">Contact and Enquiries</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Attractions Gallery Section -->
+    <section id="attractions-a" class="bg-light">
+        <!-- Section Header -->
+        <div class="container">
+            <h1>Attractions</h1>
+            <h3>Explore the best of Budleigh Salterton and the surrounding area</h3>
+        </div>
+
+        <!-- Gallery Buttons -->
+        <div class="buttons-container">
+            <div class="h3">Show me:</div>
+            <div id="myBtnContainer">
+                <button class="btn active btn-light" onclick="filterSelection('all')">Everything</button>
+                <button class="btn btn-light" onclick="filterSelection('nature')">Nature</button>
+                <button class="btn btn-light" onclick="filterSelection('interest')">Points of Interest</button>
+                <button class="btn btn-light" onclick="filterSelection('history')">History</button>
+                <button class="btn btn-light" onclick="filterSelection('todo')">Things To Do</button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <article class="gallery grid">
+            <div class="boxes">
+                
+                <!-- Seafront -->
+                <div class="box nature myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/sea_view.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Budleigh Seafront</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Budleigh Seafront</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/sea_view.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                            <p>The two mile stretch of pebble beach is highly popular for those wanting to visit the seaside. With safe swimming waters and designated areas for seasonal fishing and watersports, a wide promenade with cafes and ice creams, picturesque beach huts and fishing boats, Budleigh Salterton has everything to make your visit to the seafront perfect.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coast Path -->
+                <div class="box nature todo myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/southwest_coastpath_2.jpeg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>South West Coast Path</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">South West Coast Path</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/southwest_coastpath_2.jpeg" alt=""></div>
+                            <div class="modal-content-text-container">
+                            <p>The cliffs that frame our beach so spectacularly also offer stunning views and adventure. With many walking routes either starting or going through Budleigh Salterton it's a perfect location for a walk. You'll find tranquility and isolation in the untouched nature, or adventure and wilderness in the exciting terrain. <br><br>
+                            Find out more <a href="https://www.southwestcoastpath.org.uk/search/?q=budleigh+salterton" target="_blank" class="link-underlined">here</a>.</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Walter Raleight -->
+                <div class="box interest history myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/walter_raleigh.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Sir Walter Raleigh</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Sir Walter Raleigh</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/walter_raleigh.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>English History lovers can enjoy visiting the birthplace of Sir Walter Raleigh, just a short journey to neighbouring East Budleigh. You can also enjoy the 2020 Exhibit at the Fairlynch Museum on our Devonion explorers and pioneers. Raleigh's beautiful childhood home of Hayes Barton is well worth seeing if you're in the area, although not open to the public.</p>  
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fairlynch Museum -->
+                <div class="box todo interest history myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/fairlynch_2.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Fairlynch Museum</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Fairlynch Museum</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/fairlynch_2.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Housed in a Grade II listed 1811 cottage, this volunteer-run museum has boasts a range of fantastic exhibitions. From possibly the oldest jurassic coast fossil to items from the day of Sir Walter Raleigh, the museum offers fantastic insight to the best of the local area and beyond. Check out the <a href="https://www.fairlynchmuseum.uk/" target="_blank" class="link-underlined">official website</a> for full details on the exhibitions, what's on, and opening hours.</p>  
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- River Otter -->
+                <div class="box todo nature interest myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/otter_2.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>River Otter & Nature Reserve</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">The River Otter</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/otter.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>With the mouth of the East Devon river at the easternmost point of Budleigh seafront, we are treated to yet another natural landmark on our doorstep. The Estuary was already notable for its birdwatching and beauty spots, but has in recent years made national headlines for the success of a growing beaver population. Visitors to the river are delighted by close-up views of birds, beavers and otters along the riverbanks. Perfect for walkers and families it also intersects many East Devon villages and towns.</p> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High Street -->
+                <div class="box interest myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/high_street.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>High Street</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">High Street</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/high_street_2.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>We are well noted in the local area for our abundance of fantastic local businesses. Bookended by stylish coffee shops and tea rooms, the high street showcases Regency architecture and seaside charm. For a full list of the local businesses try the <a href="https://budleighsaltertonchamber.org.uk/" target="_blank" class="link-underlined">Chamber of Commerce</a> business directory.</p>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Stuart Line Cruises -->
+                <div class="box interest todo nature myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/stuartline.jpeg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Stuart Line Cruises</h2>
+
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Stuart Line Cruises</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/stuartline.jpeg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Based in Exmouth's marina area, the Stuart Line boat cruises offer a perspective of Exmouth and Budleigh Salterton unlike any other. As a highly rated and award winning tourist experience, this is a fantastic way to experience the sea, take on the full scale of the Jurassic Coast cliff line, and simply have a great day out.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Croquet Club -->
+                <div class="box todo history interest myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/sports_2_croquet.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Croquet Club</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Croquet Club</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/sports_2_croquet.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Known to european and international croquet players and boasting 11 international class lawns in its facilities, the BSCC is a hidden gem. Founded in the 1860s it is also one of the oldest clubs of its kind in the country. Find out everything you need to know on their <a href="https://www.budleighcroquet.org/" class="link-underlined" target="_blank">official website</a>.</p>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Golf Club -->
+                <div class="box todo interest myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/sports_4_golf.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>East Devon Golf Club</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">East Devon Golf Club</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/sports_4_golf.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Rated 4th best in the county and 72nd in the country, nestled in the hills above Budleigh you will find the impressive East Devon Golf Club. In a prime location to take in the best of the surrounding area, EDGC is a must for any fans of the sport. Discover more on the <a href=https://www.eastdevongolfclub.co.uk/ class="link-underlined" target="_blank">official website</a>.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Sport -->
+                <div class="box todo myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/sports_1_football.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Sport</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Sport</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/sports_3_bowls.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Budleigh Salterton has an array of sports facilities normally afforded to far larger towns. Among the prestigious croquet club and golf club (elaborated upon in other sections) we also have a football ground, cricket club, rifle club, games club with tennis and bowls facilities, a skatepark, and a beach for watersports. There is surely something for anybody looking to spectate or get active on their visit!</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Bicton -->
+                <div class="box todo nature history interest myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/bicton.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Bicton Parish</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Bicton Park and Gardens</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/bicton.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Find Bicton only 2 miles outside of the town. This area with a beautiful botanical gardens, impressive country house, picturesque church, and an undeniable obelisk marking its presence, is well worth a visit. The estate is a great example of a rural Manor, with most parts open to the public although the home has been largely repurposed as Bicton Agricultural College. With the Gardens Grade I listed and the home Grade II it's a must for anybody who loves history and architecture, visit the <a href="https://www.bictongardens.co.uk/" target="_blank" class="link-underlined">Bicton Park and Gardens website</a> for more information.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Donkey Sanctuary -->
+                <div class="box todo interest myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/donkey_2.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Donkey Sanctuary</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Donkey Sanctuary</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/donkey_2.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>The Donkey Sanctuary is an international animal welfare and rescue charity, and one of their UK sites is only a short trip away to neighbouring Sidmouth. Noted worldwide for their work in animal welfare, the site offers an unrivaled experience seeing wildlife up close and learning from the tours and talks. The award winning site is free to visit, fantastic for children, and you can even adopt a donkey in the gift shop, and be sent regular reminders of your visit to East Devon and the sanctuary. Full website <a href="https://www.thedonkeysanctuary.org.uk/" target="_blank" class="link-underlined">here</a>.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Cycling -->
+                <div class="box todo nature myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/cycle_path.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Cycling in East Devon</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Cycling in East Devon</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/cycle_path.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                                <p>Budleigh Salterton was historically serviced by a train line, and you'll be reminded of that best when on the National Cycle Route 2 section between the town and nearby Exmouth as you ride along a beautiful protected cycleway and path that follows the old rail route. Once in Exmouth you have access to the Exe Estuary Trail, hugely popular with tourists and locals alike. Don't have a bike or don't want to bring it? You can also <a href="http://www.exmouthcyclehire.co.uk/" target="_blank" class="link-underlined">hire bikes</a> for a simple yet perfect way to spend a day and see the best of our local nature, towns and attractions.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+
+    <footer class="bg-light">
+        <div class="footer-container">
+            <!--Footer Navbar Links -->
+            <nav>
+                <ul>
+                    <li><h3>Useful Links</h3></li> 
+                    <li><div class="bottom-line"></div></li> 
+                    <li><a target="_blank" href="http://www.visitbudleigh.com/visit/wp-content/uploads/2013/05/budcircwalk.pdf?LMCL=G9k0R3">Walking Guide</a></li>
+                    <li><a target="_blank" href="#">Amenities</a></li>
+                    <li><a target="_blank" href="https://tiscon-maps-stagecoachbus.s3.amazonaws.com/Timetables/South%20West/June152020/157_Web260519.pdf">Local Bus Timetable</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Visit the Area</h3></li>
+                    <li><div class="bottom-line"></div></li>
+                    <li><a target="_blank" href="https://www.visitdevon.co.uk/">Visit Devon</a></li>
+                    <li><a target="_blank" href="https://www.visitsouthdevon.co.uk/">Visit South Devon</a></li>
+                    <li><a target="_blank" href="https://www.visitexeter.com/">Visit Exeter</a></li>
+                    <li><a target="_blank" href="https://visitsidmouth.co.uk/">Visit Sidmouth</a></li>
+                    <li><a target="_blank" href="https://www.visitexmouth.org/">Visit Exmouth</a></li>
+                </ul>
+                <ul>
+                    <li><h3>What's On</h3></li>
+                    <li><div class="bottom-line"></div></li>
+                    <li><a target="_blank" href="https://budlitfest.org.uk/">Literary Festival</a></li>
+                    <li><a target="_blank" href="https://www.budleighmusicfestival.co.uk/">Music Festival</a></li>
+                    <li><a target="_blank" href="https://www.foodanddrinkdevon.co.uk/whats-on/budleigh-salterton-farmers-market">Budleigh Farmer's Market</a></li>
+                </ul>
+            </nav>
+            <!-- Footer Copyright -->
+            <div class="copyright-container">
+                <p>Copyright &copy;2020 Budleigh Salterton</p>
+                <p>Designed and built by Alex Warren Web Design</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modal.js"></script>
+    <script src="js/galleryfilter.js"></script>
+</body>
+</html>

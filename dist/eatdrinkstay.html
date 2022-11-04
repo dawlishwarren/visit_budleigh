@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Budleigh | Amenities</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <header id="header-inner">
+        <div class="container">
+            <nav id="inner-nav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="attractions.html">Attractions</a></li>
+                  <li><a href="eatdrinkstay.html" class="current">Eat, Drink and Stay</a></li>
+                  <li><a href="contact.html">Contact and Enquiries</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <section id="amenities-a" class="bg-light">
+        <!-- Section Header -->
+        <div class="container">
+            <h1>Experience Westcountry Hospitality</h1>
+            <h3>Explore the best of Budleigh Salterton and the surrounding area</h3>
+        </div>
+
+        <!-- Gallery Buttons -->
+        <div class="buttons-container">
+            <div class="h3">Show me:</div>
+            <div id="myBtnContainer">
+                <button class="btn active btn-light" onclick="filterSelection('all')">Everything</button>
+                <button class="btn btn-light" onclick="filterSelection('accommodation')">Accommodation</button>
+                <button class="btn btn-light" onclick="filterSelection('food')">Food and Drink</button>
+                <button class="btn btn-light" onclick="filterSelection('local')">Local to Budleigh</button>
+                <button class="btn btn-light" onclick="filterSelection('nearby')">Nearby</button>
+            </div>
+        </div>
+        <!-- Gallery Grid -->
+        <article class="gallery grid">
+            <div class="boxes">
+                <!-- Pebbles -->
+                <div class="box accommodation local myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/pebbles.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Pebbles the Apartment</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        Modal content
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Pebbles the Apartment</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/pebbles.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                            <p>'Pebbles The Apartment' is available for self catering holidays throughout the year, providing holiday accommodation for 2 adults. This luxury holiday flat looks directly out onto Budleigh beach and has sea views from the lounge, bedroom and kitchen.
+                            <br><br>
+                            This first floor holiday flat has outstanding sea views and overlooks the South West Coast Path, pebble beach and Lyme Bay. Step outside the rear gate and you will be on the Jurassic coast path and Budleigh beach. Open the windows or the French doors and hear the waves and surf breaking on the pebbles.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Syon House Hotel -->
+                <div class="box accommodation local myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/syon_house_hotel.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Syon House Hotel</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        Modal content
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Syon House Hotel</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/syon_house_hotel.jpg" alt=""></div>
+                            <div class="modal-content-text-container">
+                            <p>Syon House is nestled on the edge of Budleigh Salterton, in beautiful East Devon. With stunning decor, sumptuous fabrics, plenty of space to relax, eat and drink and exemplary customer service, it is the perfect, intimate hotel in Devon to relax with friends and family. Find out more on the <a href="https://www.syonhousedevon.co.uk/" class="link-underlined" target="_blank">website</a>.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ladram Bay Holiday Park -->
+                <div class="box accommodation nearby myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/ladram_bay_01.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Ladram Bay</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Ladram Bay</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/ladram_bay_02.jpeg" alt=""></div>
+                            <div class="modal-content-text-container text-small">
+                            <p>Family owned and run, we have one aim: to give you the holiday you deserve. It’s our friendly, personal touch that keeps people coming back year after year and makes us a 5-star, award-winning park.
+                            <br>
+                            Savour breakfast with a sweeping ocean view, lounge on our private beach, splash about with the kids at the pool, and enjoy exciting evening entertainment. Everything you need is right here onsite, but if you want more you can explore the majestic UNESCO World Heritage Jurassic Coast and Devon countryside. 
+                            <br>
+                            We’re waiting to welcome you. <a href="https://www.ladrambay.co.uk/" class="link-underlined" target="_blank">Book your stay today</a>.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Devon Cliffs / Sandy Bay -->
+                <div class="box accommodation nearby myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/devon_cliffs_01.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Devon Cliffs Holiday Park</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Devon Cliffs / Sandy Bay</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/devon_cliffs_02.jpg" alt=""></div>
+                            <div class="modal-content-text-container text-small">
+                            <p>'Devon Cliffs Holiday Park is our biggest park. It's got acres of fun for you, situated in the gorgeous East Devon Area of Outstanding Natural Beauty famous for its intimate wooded combes and fertile river valleys. Head to the beach and have a crack at surfing or paddleboarding with our Surf and Paddle School. Back on dry land, score a hole in one with Adventure Golf. Then finish your day with sea views as sumptuous as the local seafood served up at the South Beach Café.' <br>
+                            <br>
+                            Source: 
+                            <a href="https://www.haven.com/parks/devon/devon-cliffs/" class="link-underlined" target="_blank">haven.com</a>.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Slice of Lyme -->
+                <div class="box food local myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/slice_of_lyme.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>A Slice of Lyme</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">A Slice of Lyme</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/slice_of_lyme.jpg" alt=""></div>
+                            <div class="modal-content-text-container text-small">
+                            <p>'A Slice of Lyme restaurant serves a wide range of dishes with global appeal. Well known for its fresh local fish, the daily specials at A Slice of Lyme always include a fresh catch. From Full English breakfasts served all day, Devon cream teas, light bites and classic English fayre, to a sophisticated bistro menu for the evenings influenced by countries all around the world. A Slice of Lyme also has an extensive wine list and bar menu that includes a Devon made wine and local ciders.'<br>
+                            <br>
+                            Source: 
+                            <a href="https://www.sliceoflyme.co.uk/" class="link-underlined" target="_blank">sliceoflyme.co.uk</a>.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tea & Tittle Tattle -->
+                <div class="box food local myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/tea_tittle_tattle_01.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Tea and Tittle Tattle</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Tea and Tittle Tattle</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/tea_tittle_tattle_02.jpg" alt=""></div>
+                            <div class="modal-content-text-container text-small">
+                            <p>'Traditional Devon cream teas and our infamous vintage afternoon tea are favourites at Tea and Tittle Tattle and have won us the coveted Best South West Cafe in 2017 from Taste of the West! In our seaside tea shop and restaurant we pride ourselves on our unpretentious home-made food and generous portions! Using locally sourced produce wherever possible, our customers can relax and enjoy some of our delicious home cooking in our warm and friendly atmosphere, just a stones throw from our idyllic pebble beach here in Budleigh Salterton on the Jurassic Coast of East Devon.'<br>
+                            Source: 
+                            <a href="https://www.teaandtittletattle.co.uk/" class="link-underlined" target="_blank">teaandttittletattle.co.uk</a>.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Otterton Mill -->
+                <div class="box food nearby myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/otterton_mill_01.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Otterton Mill</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Otterton Mill</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/otterton_mill_02.jpg" alt=""></div>
+                            <div class="modal-content-text-container text-small">
+                            <p>'Set beside the River Otter in one of Devon's most beautiful coastal valleys, a warm welcome awaits you at Otterton Mill - the place in Devon to experience the ancient traditions of flour milling, bread baking and much more. The mill has been running since 1068, making it possibly the 18th oldest company in the world.
+                            <br>
+                            The idyllic setting of our historic working watermill and the stunning surrounding countryside attracts visitors year round from all over the world. They come to enjoy our mill, bakery, cafe-restaurant, local food shop, gift and craft shop, art gallery, live music, and other events.'<br>
+                            Source: 
+                            <a href="http://ottertonmill.com/eat/" class="link-underlined" target="_blank">ottertonmill.co.uk</a>.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budleigh Pubs -->
+                <div class="box food accommodation local myBtn_multi">
+                    <div class="box-image">
+                        <img src="/dist/img/budleigh_pubs_feathers.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <div class="box-text-wrap">
+                            <h2>Budleigh Salterton Pubs</h2>
+                        </div>
+                    </div>
+                    <div class="modal modal_multi">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close close_multi">&times;</span>
+                            <h2 class="lead">Budleigh Salterton Pubs</h2>
+                            <div class="modal-content-image-container"><img src="/dist/img/budleigh_pubs_salterton.jpg" alt=""></div>
+                            <div class="modal-content-text-container text-small">
+                            <p>Budleigh hosts two pubs, the Feathers Hotel and the Salterton Arms. The former also has rooms for rent in a catered B&B inn style. Expect local charm and guest ales in both. Although these are the only two in the center of Budleigh the local area hosts an array of pubs and inns, many of which celebrate a proud heritage of local ales.  </p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+
+
+    <footer class="bg-light">
+        <div class="footer-container">
+            <!--Footer Navbar Links -->
+            <nav>
+                <ul>
+                    <li><h3>Useful Links</h3></li> 
+                    <li><div class="bottom-line"></div></li> 
+                    <li><a target="_blank" href="http://www.visitbudleigh.com/visit/wp-content/uploads/2013/05/budcircwalk.pdf?LMCL=G9k0R3">Walking Guide</a></li>
+                    <li><a href="eatdrinkstay.html">Amenities</a></li>
+                    <li><a target="_blank" href="https://tiscon-maps-stagecoachbus.s3.amazonaws.com/Timetables/South%20West/June152020/157_Web260519.pdf">Local Bus Timetable</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Visit the Area</h3></li>
+                    <li><div class="bottom-line"></div></li>
+                    <li><a target="_blank" href="https://www.visitdevon.co.uk/">Visit Devon</a></li>
+                    <li><a target="_blank" href="https://www.visitsouthdevon.co.uk/">Visit South Devon</a></li>
+                    <li><a target="_blank" href="https://www.visitexeter.com/">Visit Exeter</a></li>
+                    <li><a target="_blank" href="https://visitsidmouth.co.uk/">Visit Sidmouth</a></li>
+                    <li><a target="_blank" href="https://www.visitexmouth.org/">Visit Exmouth</a></li>
+                </ul>
+                <ul>
+                    <li><h3>What's On</h3></li>
+                    <li><div class="bottom-line"></div></li>
+                    <li><a target="_blank" href="https://budlitfest.org.uk/">Literary Festival</a></li>
+                    <li><a target="_blank" href="https://www.budleighmusicfestival.co.uk/">Music Festival</a></li>
+                    <li><a target="_blank" href="https://www.foodanddrinkdevon.co.uk/whats-on/budleigh-salterton-farmers-market">Budleigh Farmer's Market</a></li>
+                </ul>
+            </nav>
+            <!-- Footer Copyright -->
+            <div class="copyright-container">
+                <p>Copyright &copy;2020 Budleigh Salterton</p>
+                <p>Designed and built by Alex Warren Web Design</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modal.js"></script>
+    <script src="js/galleryfilter.js"></script>
+</body>
+</html>
